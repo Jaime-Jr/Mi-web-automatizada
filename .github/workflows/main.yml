@@ -10,5 +10,5 @@ jobs:
       - name: Ejecutar comando directamente en mi Debian
         run: |
           echo "¡Hola desde GitHub Actions!" > ~/hola_mundo.txt
-          echo "El despliegue automático funcionó." >> ~/hola_mundo.txt
+          echo "Arriba el america perras." >> ~/hola_mundo.txt
           date >> ~/hola_mundo.txt
