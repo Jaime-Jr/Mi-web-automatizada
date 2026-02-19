@@ -11,4 +11,4 @@ jobs:
         run: |
           echo "¡Hola desde GitHub Actions!" > ~/Actualizacion de movil.txt
           echo "Se hizo la actualicion en mexico ." >> ~/Actualizacion de movil.txt
-          date >> ~/hola_mundo.txt
+          date >> ~/Actualizacion de movil.txt
