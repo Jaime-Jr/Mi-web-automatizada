@@ -19,5 +19,5 @@ jobs:
           echo "--- INFO DEL SISTEMA ---" >> ~/hola_mundo.txt
           echo "Usuario actual:" >> ~/hola_mundo.txt
           whoami >> ~/hola_mundo.txt
-          echo "Memoria disponible:" >> ~/hola_mundo.txt
+          echo "Memoria disponible" >> ~/hola_mundo.txt
           free -h >> ~/hola_mundo.txt
