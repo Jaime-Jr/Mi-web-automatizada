@@ -9,6 +9,6 @@ jobs:
     steps:
       - name: Ejecutar comando directamente en mi Debian
         run: |
-          echo "¡Hola desde GitHub Actions!" > ~/hola mundo.txt
-          echo "Se hizo la actualicion en mexico ." >> ~/hola mundo.txt
-          date >> ~/hola mundo.txt
+          echo "¡Hola desde GitHub Actions!" > ~/hola_mundo.txt
+          echo "Se hizo la actualicion en mexico ." >> ~/hola_mundo.txt
+          date >> ~/hola_mundo.txt
