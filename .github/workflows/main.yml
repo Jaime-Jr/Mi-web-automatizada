@@ -2,16 +2,13 @@ name: Mi_Primer_Despliegue
 on:
   push:
     branches: [ main ]
+
 jobs:
   deploy:
-    runs-on: ubuntu-latest elf-hosted
+    runs-on: self-hosted
     steps:
-      - name: Ejecutar comando en Debian
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
-          script: |
-            echo "¡Hola desde GitHub Actions!" > ~/hola_mundo.txt
-            echo "El despliegue automático funcionó."
+      - name: Ejecutar comando directamente en mi Debian
+        run: |
+          echo "¡Hola desde GitHub Actions!" > ~/hola_mundo.txt
+          echo "El despliegue automático funcionó." >> ~/hola_mundo.txt
+          date >> ~/hola_mundo.txt
