@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Generar Reporte de Despliegue
         run: |
-          echo "==========================================" > ~/hola_mundo.txt
+          echo "=============" > ~/hola_mundo.txt
           echo "   DESPLIEGUE EXITOSO EN DEBIAN 12" >> ~/hola_mundo.txt
           echo "==========================================" >> ~/hola_mundo.txt
           echo "Fecha de ejecucion: $(date)" >> ~/hola_mundo.txt
