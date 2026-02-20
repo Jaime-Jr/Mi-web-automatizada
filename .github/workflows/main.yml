@@ -1,4 +1,4 @@
-name: Mi_Primer_Despliegue
+name: Despliegue_Desde_Cero
 on:
   push:
     branches: [ main ]
@@ -7,17 +7,12 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
-      - name: Actualiza archivo hola_mundo
+      - name: Generar Reporte de Despliegue
         run: |
-          echo "¡Hola desde GitHub Actions!" > ~/hola_mundo.txt
-          echo "Se hizo la actualicion en mexico ." >> ~/hola_mundo.txt
-          echo "Hola mundo 2 perras." >> ~/hola_mundo.txt
-          date >> ~/hola_mundo.txt
-
-      - name: Info del Sistema
-        run: |
-          echo "--- INFO DEL SISTEMA ---" >> ~/hola_mundo.txt
-          echo "Usuario actual:" >> ~/hola_mundo.txt
-          whoami >> ~/hola_mundo.txt
-          echo "Memori disponible" >> ~/hola_mundo.txt
+          echo "==========================================" > ~/hola_mundo.txt
+          echo "   DESPLIEGUE EXITOSO EN DEBIAN 12" >> ~/hola_mundo.txt
+          echo "==========================================" >> ~/hola_mundo.txt
+          echo "Fecha de ejecucion: $(date)" >> ~/hola_mundo.txt
+          echo "Usuario en Debian: $(whoami)" >> ~/hola_mundo.txt
+          echo "Memoria del Servidor:" >> ~/hola_mundo.txt
           free -h >> ~/hola_mundo.txt
