@@ -7,7 +7,7 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
-      - name: Actualizar archivo hola_mundo
+      - name: Actualiza archivo hola_mundo
         run: |
           echo "¡Hola desde GitHub Actions!" > ~/hola_mundo.txt
           echo "Se hizo la actualicion en mexico ." >> ~/hola_mundo.txt
